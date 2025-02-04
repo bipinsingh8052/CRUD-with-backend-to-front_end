@@ -1,6 +1,8 @@
 
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import Display from './Display';
+import Insert from './Insert';
 export default function Home() {
   return (
     <>
@@ -29,6 +31,15 @@ export default function Home() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+
+<hr />
+<br /><br /><br />
+<Display/>
+<br /><br /><br /><br /><br /><br />
+
+
+<Insert/>
 
 
 </>

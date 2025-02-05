@@ -1,5 +1,6 @@
     import React, { useState } from 'react'
     import axios from 'axios'
+    import {message} from 'antd'
     export default function Insert() {
         let [input,set_Input]=useState({})
         const HandleINput=(e)=>{
@@ -16,8 +17,13 @@
         const fromSubmit=async(e)=>{
             e.preventDefault();
             let api=('http://localhost:8000/empolyee/insert');
-            let res= await  axios.post(api,input);
-            console.log(res.data);
+            await  axios.post(api,input)
+            .then(res=>{
+                console.log(res.data.msg)
+                message.success(`${res.data.msg}`)
+            })
+            // console.log(res.data);
+            // message.succes("insert the data")
 
         }
         

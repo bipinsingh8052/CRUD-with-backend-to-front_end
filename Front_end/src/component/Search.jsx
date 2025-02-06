@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import { FiSearch } from "react-icons/fi";
 
 export default function Search() {
     let [input,SetInput]=useState()
@@ -29,7 +29,7 @@ export default function Search() {
         <br></br>
         <hr />
         <h5>Enter the Employee No: <input type="text" name="name" onChange={(e)=>{SetInput(e.target.value)}} /> 
-        <button onClick={Searchdata}>Search</button>
+        <button onClick={Searchdata}><FiSearch /></button>
         
          </h5>
 <hr />

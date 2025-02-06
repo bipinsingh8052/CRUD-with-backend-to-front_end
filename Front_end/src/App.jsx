@@ -5,6 +5,7 @@ import Display from './component/Display'
 import Insert from './component/Insert'
 import Search from './component/Search'
 import UpdatePage from './component/UpdatePage'
+import UpdateFrom from './component/UpdateFrom'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='insert' element={<Insert/>}/>
           <Route path='search' element={<Search/>}/>
           <Route path='update' element={<UpdatePage/>}/>
+          <Route path='updatesave/:id' element={<UpdateFrom/>}/>
          </Route>
       </Routes>
     </BrowserRouter>

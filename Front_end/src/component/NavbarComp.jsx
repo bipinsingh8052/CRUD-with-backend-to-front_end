@@ -11,6 +11,8 @@ export default function NavbarComp(props) {
         <Nav.Link as={Link} to={props.home}>Home</Nav.Link>
         <Nav.Link  as={Link} to={props.display}>Display</Nav.Link>
         <Nav.Link  as={Link} to={props.insert}>Insert</Nav.Link>
+        <Nav.Link  as={Link} to={props.search}>search</Nav.Link>
+        <Nav.Link  as={Link} to={props.update}>update</Nav.Link>
       </Nav>
     </Container>
   </Navbar>

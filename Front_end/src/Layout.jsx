@@ -7,7 +7,7 @@ export default function Layout() {
   return (
     <div>
        
-        <NavbarComp  home="home" display="display" insert="insert" />
+        <NavbarComp  home="home" display="display" insert="insert" search="search" update="update" />
         <main>
             <Outlet/>
         </main>

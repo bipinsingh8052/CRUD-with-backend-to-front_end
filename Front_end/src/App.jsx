@@ -3,6 +3,8 @@ import Layout from './Layout'
 import Home from './component/Home'
 import Display from './component/Display'
 import Insert from './component/Insert'
+import Search from './component/Search'
+import UpdatePage from './component/UpdatePage'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
           <Route path='home' element={<Home/>}/>
           <Route path='display' element={<Display/>}/>
           <Route path='insert' element={<Insert/>}/>
+          <Route path='search' element={<Search/>}/>
+          <Route path='update' element={<UpdatePage/>}/>
          </Route>
       </Routes>
     </BrowserRouter>
